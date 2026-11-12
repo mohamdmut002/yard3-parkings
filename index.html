@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ساعد للأنظمة المرورية – ساحات الحجز</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+</head>
+<body>
+<header>
+ <div><h1>ساعد للأنظمة المرورية</h1><small>ساحات الحجز | SAAED Impound Yard – Lane K1</small></div>
+ <div class="stats"><div class="st"><b id="sc">0</b><span>سيارات</span></div><div class="st"><b id="se">0</b><span>مواقف فارغة</span></div><div class="st"><b id="st">0</b><span>إجمالي المواقف</span></div></div>
+</header>
+<div class="bar">
+ <input id="q" placeholder="ابحث برقم اللوحة أو رقم الباركن">
+ <label>عدد مواقف K1 <input id="n" type="number" min="1" max="200"></label>
+ <button id="bi">استيراد بيانات</button>
+ <button id="be">تصدير نسخة احتياطية</button>
+ <button id="bk">استيراد نسخة احتياطية</button>
+</div>
+<main id="m">
+ <div class="zoom"><button id="zi">+</button><button id="zo">−</button><button id="zf">⤢</button><button id="zk">K1</button></div>
+ <div class="leg"><span><i style="background:var(--slot)"></i>فارغ</span><span><i style="background:#1b3a8a"></i>مشغول</span><span><i style="background:var(--hl)"></i>نتيجة البحث</span></div>
+ <svg id="s"><g id="v"></g></svg>
+</main>
+<footer>Developed by Mohammed Mutasim (4223) &amp; Mohammed Tareq (4224)</footer>
+<div id="tip"></div><div id="toast"></div>
+<div class="ov" id="ov"><div class="dlg" id="dl"></div></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
